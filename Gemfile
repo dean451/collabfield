@@ -5,6 +5,13 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'airtable'
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'dotenv-rails'
+gem 'better_errors'
+gem 'binding_of_caller'
+
+gem 'jquery-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
