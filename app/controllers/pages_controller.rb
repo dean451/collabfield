@@ -11,8 +11,6 @@ class PagesController < ApplicationController
     # @client = Airtable::Client.new(ENV['AIRTABLE_API_KEY'])
     @table = HTTParty.get("https://api.airtable.com/v0/#{app[:Rails]}/Table%201?api_key=#{ENV['AIRTABLE_API_KEY']}")
     @records= @table['records']
-    # raise 'hi'
-    # @records.offset
 
     @bill = @records.first
 
