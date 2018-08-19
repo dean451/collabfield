@@ -5,6 +5,6 @@
 <ul>
   <!-- <%= @records %> -->
   <% @records.each do |r| %>
-    <li><%= r["fields"]["Name"] %></li>
+    <li><%= r["fields"]["Name"] + " - " + r["fields"]["Title"]  %></li>
   <%- end %>
 </ul>
