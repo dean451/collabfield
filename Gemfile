@@ -12,7 +12,7 @@ gem 'better_errors'
 gem 'binding_of_caller'
 gem 'devise'
 gem 'bootstrap_form'
-
+gem 'faker'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
