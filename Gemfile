@@ -13,6 +13,7 @@ gem 'binding_of_caller'
 gem 'devise'
 gem 'bootstrap_form'
 gem 'faker'
+gem 'will_paginate', '~> 3.1.0'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
