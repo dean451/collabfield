@@ -28,7 +28,7 @@ module PostsHelper
     if params[:category].present?
       'posts/branch/search_form/category_field'
     else
-      'shared/empty_partial'
+      'posts/shared/empty_partial'
     end
   end
 
