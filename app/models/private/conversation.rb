@@ -14,4 +14,8 @@ scope :between_users, -> (user1_id, user2_id) do
   )
 end
 
+def opposed_user(user)
+  user == recipient ? sender : recipient
+end
+
 end
