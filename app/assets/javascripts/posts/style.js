@@ -11,7 +11,7 @@ $(document).on('turbolinks:load', function() {
         else {
             $(".single-post-card").each(function() {
                 $(this).addClass("border-color-mode");
-                // $(this).css('border', '5px solid ' + randomColor());
+                $(this).css('border', '5px solid ' + randomColor());
             });
         }
     }
@@ -32,15 +32,14 @@ var mode = Math.floor(Math.random() * 2);
 
 // Randomly returns a color scheme
 function randomColorSet() {
-    var colorSet1 = ['#7ECCE9', '#4EBBE6','#00A8E1'];
-    var colorSet2 = ['#C2E9E7', '#9CE3E5', '#58D4D9'];
+    var colorSet1 = ['#87DBE1', '#F2CEEB', '#58D1A9', '#FF9980', '#FFB776'];
+    var colorSet2 = ['#FF6138', '#FFFF9D', '#BEEB9F', '#79BD8F', '#79BD8F'];
     var colorSet3 = ['#FCFFF5', '#D1DBBD', '#91AA9D', '#3E606F', '#193441'];
     var colorSet4 = ['#004358', '#1F8A70', '#BEDB39', '#FFE11A', '#FD7400'];
     var colorSet5 = ['#105B63', '#FFFAD5', '#FFD34E', '#DB9E36', '#BD4932'];
     var colorSet6 = ['#04BFBF', '#CAFCD8', '#F7E967', '#A9CF54', '#588F27'];
     var colorSet7 = ['#405952', '#9C9B7A', '#FFD393', '#FF974F', '#F54F29'];
-    var randomSet = [colorSet1, colorSet2];
-    //, colorSet2, colorSet3, colorSet4, colorSet5, colorSet6, colorSet7
+    var randomSet = [colorSet1, colorSet2, colorSet3, colorSet4, colorSet5, colorSet6, colorSet7];
     return randomSet[Math.floor(Math.random() * randomSet.length )];
 }
 
