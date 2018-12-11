@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 20181211185414) do
     t.integer "sender_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["recipient_id", "sender_id"], name: "index_private_conversations_on_recipient_id_and_sender_id", unique: true
+    t.index ["recipient_id", "sender_id"], name: "index_private_conversations_on_recipient_id_and_sender_id"
     t.index ["recipient_id"], name: "index_private_conversations_on_recipient_id"
     t.index ["sender_id"], name: "index_private_conversations_on_sender_id"
   end
