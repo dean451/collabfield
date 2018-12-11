@@ -14,9 +14,11 @@ end
 
 def seed_categories
   hobby = ['Arts', 'Crafts', 'Sports', 'Sciences', 'Collecting', 'Reading', 'Other']
+
   study = ['Arts and Humanities', 'Physical Science and Engineering', 'Math and Logic',
           'Computer Science', 'Data Science', 'Economics and Finance', 'Business',
           'Social Sciences', 'Language', 'Other']
+
   team = ['Study', 'Development', 'Arts and Hobby', 'Other']
 
   hobby.each do |name|
