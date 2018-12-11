@@ -10,4 +10,5 @@ class User < ApplicationRecord
   has_many :private_conversations,
             foreign_key: :sender_id,
             class_name: 'Private::Conversation'
+    
 end
